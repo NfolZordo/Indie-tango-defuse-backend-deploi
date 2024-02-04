@@ -9,6 +9,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.io.IOException;
 
@@ -17,6 +18,11 @@ public class WebSocketController {
 
     @Autowired
     private GameService gameService;
+
+    @GetMapping("/")
+    public String deploy() {
+        return "deploy";
+    }
 
     @MessageMapping("/createGame")
     @SendToUser("/queue/gameCode")
