@@ -121,7 +121,7 @@ public class GameSession {
                 result = "true";
             }
         } else {
-            this.countMistake.put(gameCode,this.countMistake.get(gameCode) + 1);
+            this.countMistake.put(gameCode, this.countMistake.get(gameCode) + 1);
             result = "false";
         }
         if (this.countMistake.get(gameCode) > this.gameMod.getCountMistake()) {

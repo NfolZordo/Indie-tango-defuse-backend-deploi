@@ -38,6 +38,7 @@ public class GameService {
         String playerSessionId = headerAccessor.getSessionId();
         gameSession.addPlayerSession(gameCode, playerSessionId);
         gameSession.initStepsCount(gameCode);
+        gameSession.initCountsError(gameCode);
         return gameCode;
     }
 
