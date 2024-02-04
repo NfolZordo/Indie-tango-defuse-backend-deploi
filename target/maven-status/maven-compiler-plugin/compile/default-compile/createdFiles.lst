@@ -1,0 +1,9 @@
+indie\tango\defuse\DefuseBackendApplication.class
+indie\tango\defuse\services\GameService.class
+indie\tango\defuse\models\Constants.class
+indie\tango\defuse\models\Message.class
+indie\tango\defuse\models\Constants$Scenario.class
+indie\tango\defuse\models\GameMod.class
+indie\tango\defuse\controllers\WebSocketController.class
+indie\tango\defuse\models\GameSession.class
+indie\tango\defuse\WebSocketConfig.class
