@@ -39,15 +39,15 @@ public class Constants {
     );
 
     public static List<String> imgId = Arrays.asList(
-            "1ixoue0PeBzQMXUKaSR4_UoYcOEf0z0H4",
-            "15sw7ft2ORowsLtqG2kCSPclzOsxlg0CZ",
-            "1Bnal3K9joINJJNsZJqm2MHvH9EFTCCob",
-            "Dw0VzyxDa2eSJQXcLkCB0fE0xDSeFZzt",
-            "1ugcpFBhJi_IBoyK87OAY0t5WYxxIGpds",
-            "1qLG4gItga-ekKa04QjrfKsY9qrSl4ARW",
-            "17oU_kF4W6BYq5DFoS73jvUHaJEi4VdnC",
-            "1fnhAwME6fwvnF6URW7DEtu8wBmtxgV6y",
-            "1B3D5j0a3F5i-soJkGJJ49LUmJrCLIULM",
-            "1KuW7sPbfo6u-OjggNm9jHplXXeaxw0gD"
+            "1nx-MsLVgF5ywZZYqF96FrLi83b3y5jpV",
+            "1d_V3nnL2_lK-FDK44JHhgALqyGflNnKx",
+            "1fne3_taCvjl-5408UvFIJpaaFNlhn-Lc",
+            "1-PDYI4hjr1Yz9livYO0vVR1lPGbZZcJF",
+            "1wAj2PtgD2UBzuynZMsIa9z5iq9Xhg_fR",
+            "1WVS6wqlYP42rUskNFH7lqBQUWtDszo5W",
+            "1xi5BtSmE4vryf67uZN4v5oiJnpmEo9Li",
+            "1c_GG6j6q8ZxI4iQKcO6sJR1sRAYX1p_n",
+            "19IS_bNdw-WErSQGVrZnkl6nwD__ZyX71",
+            "1SVacGw_lxFuwP5Q1D-bl2n3FJLJHmO2F"
     );
 }
