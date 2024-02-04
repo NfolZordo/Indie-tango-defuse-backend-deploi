@@ -19,11 +19,6 @@ public class WebSocketController {
     @Autowired
     private GameService gameService;
 
-    @GetMapping("/")
-    public String deploy() {
-        return "deploy";
-    }
-
     @MessageMapping("/createGame")
     @SendToUser("/queue/gameCode")
     public String createGame(SimpMessageHeaderAccessor headerAccessor) {
