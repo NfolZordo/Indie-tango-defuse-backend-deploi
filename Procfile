@@ -1,2 +1,2 @@
-web: java -war target/defuse-0.0.1-SNAPSHOT.jar
+web: java -war target/defuse-0.0.1-SNAPSHOT.war
 
