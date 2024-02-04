@@ -9,6 +9,6 @@ public class DeployController {
 
     @GetMapping("/d")
     public String deploy() {
-        return "deploy";
+        return "Да закомітились";
     }
 }
