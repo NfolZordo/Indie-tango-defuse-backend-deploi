@@ -1,2 +1,2 @@
-web: java -jar target/defuse-0.0.1-SNAPSHOT.jar
+web: java -jar src/main/java/indie/tango/defuse/DefuseBackendApplication.java
 
