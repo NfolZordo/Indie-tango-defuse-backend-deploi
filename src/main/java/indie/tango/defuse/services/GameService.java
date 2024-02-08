@@ -43,23 +43,25 @@ public class GameService {
     private final JwtService jwtService;
         private ScheduledFuture<?> timerTask;
 
-    public String createGame(SimpMessageHeaderAccessor headerAccessor, String userName) {
+    public String createGame(SimpMessageHeaderAccessor headerAccessor, String token) {
+        String email = jwtService.extractUsername(token.substring(7));
         String gameCode = gameSession.generateGameCode();
         String playerSessionId = headerAccessor.getSessionId();
-        gameSession.addPlayerSession(gameCode, playerSessionId, userName);
+        gameSession.addPlayerSession(gameCode, playerSessionId, email);
         gameSession.initStepsCount(gameCode);
         gameSession.initCountsError(gameCode);
         return gameCode;
     }
 
-    public String joinGame(String gameCode, SimpMessageHeaderAccessor headerAccessor, String userName) {
+    public String joinGame(String gameCode, SimpMessageHeaderAccessor headerAccessor, String token) {
+        String email = jwtService.extractUsername(token.substring(7));
         String playerSessionId = headerAccessor.getSessionId();
         String existingGameCode = gameSession.getGameCodeForPlayer(playerSessionId);
         if (existingGameCode != null) {
             return "Already joined a game";
         }
         if (gameSession.isGameExists(gameCode)) {
-            gameSession.addPlayerSession(gameCode, playerSessionId, userName);
+            gameSession.addPlayerSession(gameCode, playerSessionId, email);
             return "Successfully joined the game";
         } else {
             return "Game not found";
