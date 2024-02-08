@@ -129,6 +129,8 @@ public class GameSession {
             } else {
                 result = "true";
             }
+            
+        this.stepsCount.put(gameCode,this.stepsCount.get(gameCode) + 1);
         } else {
             this.countMistake.put(gameCode, this.countMistake.get(gameCode) + 1);
             result = "false";
@@ -136,7 +138,6 @@ public class GameSession {
         if (this.countMistake.get(gameCode) > this.gameMod.getCountMistake()) {
             result = "lose";
         }
-        this.stepsCount.put(gameCode,this.stepsCount.get(gameCode) + 1);
         return result;
     }
 
