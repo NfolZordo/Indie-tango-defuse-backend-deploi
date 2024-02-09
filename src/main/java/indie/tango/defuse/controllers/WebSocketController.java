@@ -65,11 +65,4 @@ public class WebSocketController {
     public ResponseEntity<String> doStep(SimpMessageHeaderAccessor headerAccessor, String button) {
         return ResponseEntity.ok(gameService.doStep(headerAccessor,button));
     }
-
-//
-//
-//    @GetMapping("/getFriends")
-//    public ResponseEntity<List<String>> getFriends() {
-//        return ResponseEntity.ok(gameService.getFriends("qwe@qwe"));
-//    }
 }
